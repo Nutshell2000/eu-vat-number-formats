@@ -1,0 +1,274 @@
+[
+  {
+    "code": "AT",
+    "country": "Austria",
+    "localName": "UID-Nummer (Umsatzsteuer-Identifikationsnummer)",
+    "format": "the letter U and 8 digits",
+    "example": "ATU12345678",
+    "pattern": "^ATU\\d{8}$",
+    "notes": []
+  },
+  {
+    "code": "BE",
+    "country": "Belgium",
+    "localName": "btw-nummer / numéro de TVA",
+    "format": "10 digits, the first 0 or 1",
+    "example": "BE0123456789",
+    "pattern": "^BE[01]\\d{9}$",
+    "notes": [
+      "Older 9-digit numbers are written with a leading 0."
+    ]
+  },
+  {
+    "code": "BG",
+    "country": "Bulgaria",
+    "localName": "ДДС номер (DDS number)",
+    "format": "9 or 10 digits",
+    "example": "BG123456789",
+    "pattern": "^BG\\d{9,10}$",
+    "notes": []
+  },
+  {
+    "code": "CY",
+    "country": "Cyprus",
+    "localName": "Αριθμός Εγγραφής ΦΠΑ (VAT registration number)",
+    "format": "8 digits and a letter",
+    "example": "CY12345678X",
+    "pattern": "^CY\\d{8}[A-Z]$",
+    "notes": []
+  },
+  {
+    "code": "CZ",
+    "country": "Czech Republic",
+    "localName": "DIČ (daňové identifikační číslo)",
+    "format": "8, 9 or 10 digits",
+    "example": "CZ12345678",
+    "pattern": "^CZ\\d{8,10}$",
+    "notes": []
+  },
+  {
+    "code": "DE",
+    "country": "Germany",
+    "localName": "USt-IdNr. (Umsatzsteuer-Identifikationsnummer)",
+    "format": "9 digits",
+    "example": "DE123456789",
+    "pattern": "^DE\\d{9}$",
+    "notes": [
+      "Germany does not share the registered name and address through VIES: a check returns valid or not valid only.",
+      "The USt-IdNr. is not the Steuernummer on German invoices; only the USt-IdNr. can be checked in VIES."
+    ]
+  },
+  {
+    "code": "DK",
+    "country": "Denmark",
+    "localName": "momsnummer (CVR-nummer or SE-nummer)",
+    "format": "8 digits",
+    "example": "DK12345678",
+    "pattern": "^DK\\d{8}$",
+    "notes": []
+  },
+  {
+    "code": "EE",
+    "country": "Estonia",
+    "localName": "KMKR number (käibemaksukohustuslase number)",
+    "format": "9 digits",
+    "example": "EE123456789",
+    "pattern": "^EE\\d{9}$",
+    "notes": []
+  },
+  {
+    "code": "EL",
+    "country": "Greece",
+    "localName": "ΑΦΜ (AFM)",
+    "format": "9 digits",
+    "example": "EL123456789",
+    "pattern": "^EL\\d{9}$",
+    "notes": [
+      "Greece's prefix in VIES is EL, not its ISO code GR. A number sent with GR is checked as EL."
+    ]
+  },
+  {
+    "code": "ES",
+    "country": "Spain",
+    "localName": "NIF-IVA (número de identificación fiscal)",
+    "format": "9 characters: a letter or digit, 7 digits, a letter or digit",
+    "example": "ESX1234567X",
+    "pattern": "^ES[A-Z0-9]\\d{7}[A-Z0-9]$",
+    "notes": [
+      "Spain does not share the registered name and address through VIES: a check returns valid or not valid only.",
+      "A Spanish NIF is valid in VIES only when the business is entered in the register of intra-Community operators (ROI)."
+    ]
+  },
+  {
+    "code": "FI",
+    "country": "Finland",
+    "localName": "ALV-numero (arvonlisäverotunniste)",
+    "format": "8 digits",
+    "example": "FI12345678",
+    "pattern": "^FI\\d{8}$",
+    "notes": [
+      "It is the business ID (Y-tunnus) without the hyphen: 0112038-9 becomes FI01120389."
+    ]
+  },
+  {
+    "code": "FR",
+    "country": "France",
+    "localName": "numéro de TVA intracommunautaire",
+    "format": "a 2-character key (digits, or letters other than O and I) and the 9-digit SIREN",
+    "example": "FR12345678901",
+    "pattern": "^FR[0-9A-HJ-NP-Z]{2}\\d{9}$",
+    "notes": [
+      "The last 9 digits are the company's SIREN, so the number also identifies it in the Sirene register."
+    ]
+  },
+  {
+    "code": "HR",
+    "country": "Croatia",
+    "localName": "PDV identifikacijski broj (OIB)",
+    "format": "11 digits",
+    "example": "HR12345678901",
+    "pattern": "^HR\\d{11}$",
+    "notes": []
+  },
+  {
+    "code": "HU",
+    "country": "Hungary",
+    "localName": "közösségi adószám",
+    "format": "8 digits",
+    "example": "HU12345678",
+    "pattern": "^HU\\d{8}$",
+    "notes": []
+  },
+  {
+    "code": "IE",
+    "country": "Ireland",
+    "localName": "VAT number",
+    "format": "7 digits and 1 or 2 letters, or the older form: a digit, a letter or + or *, 5 digits and a letter",
+    "example": "IE1234567X",
+    "pattern": "^IE(\\d{7}[A-Z]{1,2}|\\d[A-Z+*]\\d{5}[A-Z])$",
+    "notes": []
+  },
+  {
+    "code": "IT",
+    "country": "Italy",
+    "localName": "Partita IVA",
+    "format": "11 digits",
+    "example": "IT12345678901",
+    "pattern": "^IT\\d{11}$",
+    "notes": []
+  },
+  {
+    "code": "LT",
+    "country": "Lithuania",
+    "localName": "PVM mokėtojo kodas",
+    "format": "9 or 12 digits",
+    "example": "LT123456789",
+    "pattern": "^LT(\\d{9}|\\d{12})$",
+    "notes": []
+  },
+  {
+    "code": "LU",
+    "country": "Luxembourg",
+    "localName": "numéro d'identification à la TVA",
+    "format": "8 digits",
+    "example": "LU12345678",
+    "pattern": "^LU\\d{8}$",
+    "notes": []
+  },
+  {
+    "code": "LV",
+    "country": "Latvia",
+    "localName": "PVN reģistrācijas numurs",
+    "format": "11 digits",
+    "example": "LV12345678901",
+    "pattern": "^LV\\d{11}$",
+    "notes": []
+  },
+  {
+    "code": "MT",
+    "country": "Malta",
+    "localName": "VAT number",
+    "format": "8 digits",
+    "example": "MT12345678",
+    "pattern": "^MT\\d{8}$",
+    "notes": []
+  },
+  {
+    "code": "NL",
+    "country": "Netherlands",
+    "localName": "btw-identificatienummer (btw-id)",
+    "format": "9 digits, the letter B and 2 digits",
+    "example": "NL123456789B01",
+    "pattern": "^NL\\d{9}B\\d{2}$",
+    "notes": [
+      "Sole proprietors have a btw-id that differs from their older, citizen-number-based VAT number; the btw-id is the one to check."
+    ]
+  },
+  {
+    "code": "PL",
+    "country": "Poland",
+    "localName": "NIP (numer identyfikacji podatkowej)",
+    "format": "10 digits",
+    "example": "PL1234567890",
+    "pattern": "^PL\\d{10}$",
+    "notes": []
+  },
+  {
+    "code": "PT",
+    "country": "Portugal",
+    "localName": "NIF / NIPC (número de identificação fiscal)",
+    "format": "9 digits",
+    "example": "PT123456789",
+    "pattern": "^PT\\d{9}$",
+    "notes": []
+  },
+  {
+    "code": "RO",
+    "country": "Romania",
+    "localName": "CIF / CUI (cod de identificare fiscală)",
+    "format": "2 to 10 digits",
+    "example": "RO12345678",
+    "pattern": "^RO\\d{2,10}$",
+    "notes": []
+  },
+  {
+    "code": "SE",
+    "country": "Sweden",
+    "localName": "momsregistreringsnummer",
+    "format": "12 digits: the 10-digit organisationsnummer followed by 01",
+    "example": "SE123456789001",
+    "pattern": "^SE\\d{12}$",
+    "notes": [
+      "The first 10 digits are the organisationsnummer, so 556703-7485 becomes SE556703748501."
+    ]
+  },
+  {
+    "code": "SI",
+    "country": "Slovenia",
+    "localName": "identifikacijska številka za DDV",
+    "format": "8 digits",
+    "example": "SI12345678",
+    "pattern": "^SI\\d{8}$",
+    "notes": []
+  },
+  {
+    "code": "SK",
+    "country": "Slovakia",
+    "localName": "IČ DPH",
+    "format": "10 digits",
+    "example": "SK1234567890",
+    "pattern": "^SK\\d{10}$",
+    "notes": []
+  },
+  {
+    "code": "XI",
+    "country": "Northern Ireland",
+    "localName": "VAT registration number (XI prefix)",
+    "format": "9 or 12 digits, or GD or HA and 3 digits",
+    "example": "XI123456789",
+    "pattern": "^XI(\\d{9}|\\d{12}|(GD|HA)\\d{3})$",
+    "notes": [
+      "Since Brexit only Northern Ireland businesses trading in goods have an XI number in VIES. Numbers with the GB prefix are not in VIES."
+    ]
+  }
+]
